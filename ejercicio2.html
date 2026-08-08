@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Output en Javascript</title>
+    <style>
+        body {
+            background: #5b7ea9;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <!-- Botón que muestra alerta con nombre -->
+    <button onclick="mostrarAlerta()">Mostrar alerta con mi nombre</button>
+
+    <br><br>
+
+    <!-- Párrafo vacío -->
+    <p id="miParrafo"></p>
+
+    <!-- Botón que actualiza el párrafo -->
+    <button onclick="actualizarParrafo()">Cambiar texto del párrafo</button>
+
+    <script>
+        // Mensaje en consola al cargar la página
+        console.log("Página cargada");
+
+        // Función para mostrar alerta con nombre
+        function mostrarAlerta() {
+            alert("¡Hola! Soy Rodrigo Armando"); // Cambia "TuNombre" por tu nombre
+        }
+
+        // Función para actualizar el párrafo
+        function actualizarParrafo() {
+            document.getElementById("miParrafo").textContent = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+
+</body>
+</html>
